@@ -1,0 +1,63 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-myblocks-myheader {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+/* Menu */
+// Variables
+$background-color: #f8f9fa;
+$text-color: #333;
+$font-stack: 'Work Sans', sans-serif;
+
+.site-header {
+	background-color: $background-color;
+	padding: 10px 0;
+	
+	.menu-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+	}
+	
+	.header-left {
+		display: flex;
+		align-items: center;
+		margin-right: 30px;
+		
+		img {
+			height: 35px;
+			margin-right: 10px;
+		}
+		
+		.main-navigation .menu-toggle {
+			display: none;
+		}
+	}
+	
+	.header-menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-left: 20px;
+		
+		.menu-item {
+			list-style: none;
+			margin-right: 20px;
+			font: 600 16px $font-stack;
+			
+			a {
+				text-decoration: none;
+				color: $text-color;
+			}
+		}
+	}
+}

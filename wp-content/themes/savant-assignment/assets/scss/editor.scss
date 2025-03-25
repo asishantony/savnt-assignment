@@ -1,0 +1,45 @@
+.input-group {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+
+	.label {
+		font-weight: $font-weight-bold;
+		width: 10%;
+	}
+
+	p {
+		//style like an input field
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		width: 90%;
+		strong {
+			color: $primary-color;
+		}
+	}
+
+	.cta {
+		margin-top: 20px;
+
+		.cta-button {
+			padding: 10px 20px;
+			background-color: $primary-color;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+
+	.image {
+		width: 80%;
+		height: auto;
+
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: auto;
+		}
+	}
+}

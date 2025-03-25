@@ -1,0 +1,176 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+//imprt variables from variables.scss present in assets/scss
+@import "../../assets/scss/variables.scss";
+.banner {
+	background-color: $background-color-white;
+	padding: 50px 0; 
+	font-family: $primary-font;
+	&.bg_primary{
+		background-color: $primary-color;
+	}
+	&.bg_secondary{
+		background-color: $background-color;
+	}
+	&.banner__module{
+		.banner__content{
+			padding:90px 100px;
+			background: $background-color-white 0% 0% no-repeat padding-box;			
+			border-radius: 20px;
+			
+			&.bg_inner_primary{
+				background: $primary-color 0% 0% no-repeat padding-box;		
+				padding-bottom: 0;
+				padding-top:0;
+
+				.banner__title, .banner__description{
+					color:$text-color-white;
+				}
+
+				.banner__description{
+					font-size: $font-size-small;
+				}
+
+				.banner__button{
+					color:$primary-color;
+					background-color: $background-color-white;
+				}
+
+			}
+			&.bg_inner_secondary{
+				background: $background-color 0% 0% no-repeat padding-box;			
+
+			}
+			.banner__title{
+				font-size: $font-size-h2;
+				line-height: $line-height-h2;
+				color: $text-color;
+				font-weight: $font-weight-semibold;
+				margin: 15px 0;
+			}
+		}
+
+	}
+
+	&.banner__left {
+        .banner__content {
+			
+            .banner__content-left {
+                order: 2;
+                width: 50%;
+            }
+            
+            .banner__content-right {
+                order: 1;
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+	.banner__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		.banner__content-left {
+			width: 50%;
+			padding-right: 25px;
+			
+		}
+		.banner__content-right {
+			width: 50%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.banner__pre-title {
+			color: $primary-color;
+			font-size: $font-size-base;
+			font-weight: $font-weight-bold;
+			margin: 15px 0;
+			text-transform: uppercase;
+		}
+
+		.banner__title {
+			color: $text-color;
+			font-size: $font-size-h1;
+			line-height: $line-height-h1;
+			font-weight: $font-weight-semibold;
+			margin: 15px 0;
+
+			strong {
+				color: $primary-color;
+				font-weight: inherit;
+			}
+		}
+
+		.banner__description {
+			font-size: $font-size-base;
+			color: $text-color;
+			font-weight: $font-weight-regular;
+			margin: 15px 0;
+		}
+
+		.banner__button{
+			padding: 15px 25px;
+			margin: 15px 0;
+		}
+
+	}
+}
+
+.banner__simple{
+	font-family: $primary-font;
+	padding: 50px 0;
+
+	.banner__simple-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.simple__content{
+			width: 20%;
+			font-size: $font-size-base;
+			color: $text-color-light;
+			font-weight: $font-weight-regular;
+			margin: 15px 0;
+			border-right: 1px solid $border-color;
+
+			//add a small border at right
+			&:after{
+				content: '';
+				display: block;
+				width: 1px;
+				height: 100%;
+				background-color: $text-color-light;
+				border-right: 1px solid $text-color-light;
+			}
+		}
+		.simple__image{
+			width: 80%;
+			height: auto;
+			 
+			img{
+				object-fit: cover;
+				width: 100%;
+				height: auto;
+			}
+			
+		}
+	}
+
+
+}

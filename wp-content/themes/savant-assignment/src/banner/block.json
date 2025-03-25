@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "myblocks/banner",
+	"version": "0.1.0",
+	"title": "Banner",
+	"category": "Custom",
+	"icon": "banner",
+	"description": "Banner block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"bannerType": {
+			"type": "string",
+			"default": "default"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "default"
+		},
+		"innerBackgroundColor": {
+			"type": "string",
+			"default": "default"
+		},
+
+		"ctaButtonText": {
+			"type": "string",
+			"default": ""
+		},
+		"ctaButtonLink": {
+			"type": "string",
+			"default": ""
+		},
+		"imageUrl": {
+			"type": "string"
+		},
+		"imageId": {
+			"type": "number"
+		},
+		"preTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

@@ -1,0 +1,114 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@use "../../assets/scss/variables" as *;
+
+.wp-block-myblocks-myfooter {
+	text-align: left;
+}
+
+footer.footer {
+	background-color: $background-color;
+	padding: 50px 0 100px 0;
+	font-family: $primary-font;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.footer__top {
+		padding-top: 30px;
+		.footer-menu {
+			display: flex;
+			justify-content: flex-start;
+			gap: 50px;
+
+			.top-level-item {
+				a {
+					font-size: $font-size-huge;
+					font-weight: 500;
+					color: $text-color;
+					display: inline-block;
+					margin-bottom: 20px;
+				}
+				a:active {
+					color: $text-color;
+				}
+				.second-level-menu {
+					display: flex;
+					justify-content: flex-start;
+					gap: 20px;
+					.second-level-item {
+						a {
+							color: $primary-color;
+							font-size: $font-size-base;
+							font-weight: 500;
+							display: inline-block;
+							margin-bottom: 15px;
+							text-transform: uppercase; // Only applies to second-level-menu a
+						}
+					}
+				}
+
+				.third-level-menu {
+					.third-level-item {
+						a {
+							color: $text-color-light;
+							font-size: $font-size-small;
+							font-weight: 500;
+							margin-bottom: 10px;
+							text-transform: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 20px;
+
+		.footer__bottom-left {
+			.footer__bottom-logo {
+				width: 200px;
+				height: auto;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.footer__copyright {
+				color:$primary-color;
+				font-size: $font-size-small;
+				font-weight: $font-weight-light;
+			}
+		}
+
+		.footer__bottom-right{
+			.footer__menu{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				gap: 20px;
+				a{
+					color: $primary-color;
+					font-size: $font-size-small;
+					font-weight: $font-weight-light;
+				}
+			}
+		}
+	}
+}

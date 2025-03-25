@@ -1,0 +1,40 @@
+// SCSS variables
+$primary-color: #5945FE;
+$secondary-color: #0073aa;
+$text-color: #010101;
+$text-color-light: #565468;
+$text-color-white:#FFFFFF;
+$background-color: #F6F5FD;
+$background-color-white: #FFFFFF;
+$border-color: #E5E5E5;
+
+// Font families
+$primary-font: 'Work Sans', sans-serif;
+$secondary-font: 'Work Sans', sans-serif;
+$heading-font: 'Work Sans', sans-serif;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-size-huge: 24px;
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+
+
+
+// Line heights
+$line-height-h1: 60px;
+$line-height-h2: 50px;
+$line-height-h3: 40px;
+$line-height-h4: 30px;
+
+// Import Work Sans from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');

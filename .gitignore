@@ -1,0 +1,91 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+wp-content/index.php
+wp-content/languages
+wp-content/plugins/index.php
+wp-content/themes/index.php
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+wp-config-sample.php
+.htaccess
+
+# Uploads
+wp-content/uploads/
+
+# Log files
+*.log
+error_log
+access_log
+
+# Database
+*.sql
+*.sqlite
+*.sqlite3
+
+# WordPress Plugins
+# Uncomment next line and replace with your custom plugin name to track specific plugins
+# wp-content/plugins/*
+# !wp-content/plugins/your-custom-plugin/
+
+# WordPress Themes
+# Uncomment next line and replace with your custom theme name to track specific themes
+# wp-content/themes/*
+# !wp-content/themes/your-custom-theme/
+
+# WordPress upgrade files
+wp-content/upgrade/
+
+# WordPress backups
+wp-content/backups/
+
+# WordPress cache files
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/backup-db/
+
+# WP-CLI
+wp-cli.local.yml
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor/
+composer.lock
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Compiled assets
+/dist/
+/build/
+
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
