@@ -80,7 +80,9 @@ $transition-speed: 0.3s;
 		align-items: center;
 		justify-content: space-around;
 		margin-left: 20px;
-
+		.hamburger-menu-close{
+			display: none;
+		}
 		.menu-item {
 			list-style: none;
 			margin-right: 20px;

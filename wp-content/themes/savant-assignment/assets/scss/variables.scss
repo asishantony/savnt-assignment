@@ -20,13 +20,20 @@ $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
-// Font sizes
-$font-size-base: 16px;
-$font-size-small: 14px;
-$font-size-large: 18px;
-$font-size-huge: 24px;
-$font-size-h1: 50px;
-$font-size-h2: 40px;
+// // Font sizes
+// $font-size-base: 16px;
+// $font-size-small: 14px;
+// $font-size-large: 18px;
+// $font-size-huge: 24px;
+// $font-size-h1: 50px;
+// $font-size-h2: 40px;
+
+$font-size-base: 1rem;          // 16px
+$font-size-small: 0.875rem;     // 14px
+$font-size-large: 1.125rem;     // 18px
+$font-size-huge: 1.5rem;        // 24px
+$font-size-h1: 3.125rem;        // 50px
+$font-size-h2: 2.5rem;         // 40px
 
 
 
@@ -35,6 +42,29 @@ $line-height-h1: 60px;
 $line-height-h2: 50px;
 $line-height-h3: 40px;
 $line-height-h4: 30px;
+
+body{
+    font-family: $primary-font;
+}
+
+
+// create basic media queries for body font size
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
 
 // Import Work Sans from Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
