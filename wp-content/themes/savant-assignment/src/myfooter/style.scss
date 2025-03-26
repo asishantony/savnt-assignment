@@ -91,22 +91,36 @@ footer.footer {
 			}
 
 			.footer__copyright {
-				color:$primary-color;
+				color: $primary-color;
 				font-size: $font-size-small;
 				font-weight: $font-weight-light;
 			}
 		}
 
-		.footer__bottom-right{
-			.footer__menu{
+		.footer__bottom-right {
+			.footer__menu {
 				display: flex;
 				justify-content: flex-end;
 				align-items: flex-end;
 				gap: 20px;
-				a{
+				a {
 					color: $primary-color;
 					font-size: $font-size-small;
 					font-weight: $font-weight-light;
+				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 20px;
+			justify-content: center;
+			align-items: center;
+			.footer__bottom-left {
+				.footer__bottom-logo {
+					width: 150px;
+				}
+				.footer__copyright {
+					text-align: center;
 				}
 			}
 		}
