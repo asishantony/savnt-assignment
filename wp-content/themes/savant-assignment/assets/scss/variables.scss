@@ -37,12 +37,16 @@ $font-size-h2: 2.5rem;         // 40px
 
 
 
+// // Line heights
+// $line-height-h1: 60px;
+// $line-height-h2: 50px;
+// $line-height-h3: 40px;
+// $line-height-h4: 30px;
 // Line heights
-$line-height-h1: 60px;
-$line-height-h2: 50px;
-$line-height-h3: 40px;
-$line-height-h4: 30px;
-
+$line-height-h1: 3.75rem;    // 60px
+$line-height-h2: 3.125rem;   // 50px
+$line-height-h3: 2.5rem;     // 40px
+$line-height-h4: 1.875rem;   // 30px
 body{
     font-family: $primary-font;
 }
