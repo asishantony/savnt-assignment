@@ -50,18 +50,18 @@ body{
 
 // create basic media queries for body font size
 @media screen and (min-width: 320px) {
-    body {
+    html {
         font-size: 12px;
     }
     
 }
 @media screen and (min-width: 768px) {
-    body {
+    html {
         font-size: 14px;
     }
 }
 @media screen and (min-width: 1024px) {
-    body {
+    html {
         font-size: 16px;
     }
 }
