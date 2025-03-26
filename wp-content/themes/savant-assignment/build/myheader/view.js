@@ -1,1 +1,1 @@
-console.log("Hello World! (from myblocks-myheader block)");
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".hamburger-menu"),t=document.querySelector(".header-menu");e.addEventListener("click",(function(){e.classList.toggle("active"),t.classList.toggle("active")})),document.addEventListener("click",(function(n){t.contains(n.target)||e.contains(n.target)||(e.classList.remove("active"),t.classList.remove("active"))}))}));

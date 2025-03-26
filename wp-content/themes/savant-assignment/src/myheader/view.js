@@ -21,5 +21,21 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from myblocks-myheader block)' );
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.header-menu');
+    
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            hamburger.classList.remove('active');
+            menu.classList.remove('active');
+        }
+    });
+});
 /* eslint-enable no-console */
